@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title id="title">Status Hotspot - PPLG SMKN 1 Cirebon</title>
+  $(if refresh-timeout)
+  <meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+  $(endif)
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body, input, button, select, textarea, p, h1, h2, h3, h4, h5, h6, span, a, label {
+      font-family: "Poppins", sans-serif;
+    }
+    *::selection {
+      background-color: #6366f1;
+      color: #fff;
+    }
+  </style>
+
+  <script language="JavaScript">
+  <!--	
+  $(if advert-pending == 'yes')
+      var popup = '';
+      function focusAdvert() {
+        if (window.focus) popup.focus();
+      }
+      function openAdvert() {
+        popup = open('$(link-advert)', 'hotspot_advert', '');
+        setTimeout("focusAdvert()", 1000);
+      }
+  $(endif)
+      function openLogout() {
+        if (window.name != 'hotspot_status') return true;
+        open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+        window.close();
+        return false;
+      }
+  //-->
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between"
+$(if advert-pending == 'yes')
+  onLoad="openAdvert()"
+$(endif)
+>
+
+  <!-- Top Contact Bar -->
+  <header class="relative w-full">
+    <div class="bg-[#213555] py-2 px-4 sm:px-6 md:px-10 flex justify-between items-center text-xs">
+      <div class="flex items-center gap-2 text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
+        <span>0231 480202</span>
+      </div>
+      <div class="flex gap-3 items-center">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="opacity-90 hover:opacity-100 transition">
+          <img src="https://pplg-smkn1cirebon.sch.id/profil-pplg/public/icons8-facebook-144.png" alt="Facebook" class="w-4 h-4 object-contain" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="opacity-90 hover:opacity-100 transition">
+          <img src="https://pplg-smkn1cirebon.sch.id/profil-pplg/public/icons8-instagram-144.png" alt="Instagram" class="w-4 h-4 object-contain" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="opacity-90 hover:opacity-100 transition">
+          <img src="https://pplg-smkn1cirebon.sch.id/profil-pplg/public/icons8-twitter-144.png" alt="Twitter" class="w-4 h-4 object-contain" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-[105] bg-white/95 backdrop-blur-md shadow-xs border-b border-slate-100">
+    <nav class="flex justify-between items-center px-4 sm:px-6 md:px-10 py-3 max-w-7xl mx-auto">
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <img
+          src="img/logo.png"
+          class="w-8 h-8 sm:w-10 sm:h-10 aspect-square object-contain"
+          alt="SMKN 1 Cirebon"
+        />
+        <div class="leading-tight">
+          <span class="font-bold text-slate-800 text-xs sm:text-sm md:text-base block">PPLG SMKN 1 CIREBON</span>
+          <span class="text-[10px] sm:text-xs text-slate-500 block">Hotspot WiFi Status</span>
+        </div>
+      </div>
+      <div>
+        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
+          <span class="w-2 h-2 mr-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
+          Terhubung
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Status Card Section -->
+  <main class="flex-grow flex items-center justify-center px-4 py-8 sm:py-12">
+    <div class="w-full max-w-md bg-white border border-slate-200 rounded-2xl shadow-sm p-6 sm:p-8">
+      
+      <!-- User / Welcome Header -->
+      <div class="text-center mb-6">
+        <div class="w-16 h-16 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center mx-auto mb-3 shadow-inner">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+        </div>
+        
+        $(if login-by == 'trial')
+          <h3 class="text-xl font-bold text-[#213555]">Selamat Datang!</h3>
+          <span class="block w-12 h-2 bg-indigo-500 mx-auto -mt-1 mb-2"></span>
+          <p class="text-xs text-slate-500">Akses Hotspot Gratis (Trial)</p>
+        $(elif login-by != 'mac')
+          <h3 class="text-xl font-bold text-[#213555]">Selamat Datang</h3>
+          <span class="block w-12 h-2 bg-indigo-500 mx-auto -mt-1 mb-2"></span>
+          <p class="text-sm font-semibold text-indigo-600" id="user">$(username)</p>
+        $(else)
+          <h3 class="text-xl font-bold text-[#213555]">Status Hotspot</h3>
+          <span class="block w-12 h-2 bg-indigo-500 mx-auto -mt-1 mb-2"></span>
+          <p class="text-xs text-slate-500">Koneksi Internet Aktif</p>
+        $(endif)
+      </div>
+
+      <!-- Info Table -->
+      <div class="border border-slate-100 rounded-xl overflow-hidden mb-6 text-xs sm:text-sm">
+        <div class="flex justify-between items-center py-2.5 px-4 bg-slate-50 border-b border-slate-100">
+          <span class="text-slate-500 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-indigo-500"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="2" width="6" height="6" rx="1"/><rect x="9" y="16" width="6" height="6" rx="1"/><path d="M5 8v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8"/><line x1="12" y1="12" x2="12" y2="16"/></svg> Alamat IP
+          </span>
+          <span class="font-medium text-slate-800">$(ip)</span>
+        </div>
+        <div class="flex justify-between items-center py-2.5 px-4 bg-white border-b border-slate-100">
+          <span class="text-slate-500 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-indigo-500"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/><line x1="12" y1="5" x2="12" y2="19"/></svg> Upload / Download
+          </span>
+          <span class="font-medium text-slate-800">$(bytes-in-nice) / $(bytes-out-nice)</span>
+        </div>
+        <div class="flex justify-between items-center py-2.5 px-4 bg-slate-50 border-b border-slate-100">
+          <span class="text-slate-500 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-indigo-500"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Waktu Aktif
+          </span>
+          <span class="font-medium text-slate-800">$(uptime)</span>
+        </div>
+        $(if remain-bytes-total)
+        <div class="flex justify-between items-center py-2.5 px-4 bg-white border-b border-slate-100">
+          <span class="text-slate-500 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-indigo-500"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg> Sisa Kuota
+          </span>
+          <span class="font-medium text-slate-800">$(remain-bytes-total-nice)</span>
+        </div>
+        $(endif)
+        $(if session-time-left)
+        <div class="flex justify-between items-center py-2.5 px-4 bg-white border-b border-slate-100">
+          <span class="text-slate-500 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-indigo-500"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg> Sisa Waktu
+          </span>
+          <span class="font-medium text-slate-800">$(session-time-left)</span>
+        </div>
+        $(endif)
+        $(if blocked == 'yes')
+        <div class="flex justify-between items-center py-2.5 px-4 bg-red-50 border-b border-slate-100">
+          <span class="text-red-500 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Status
+          </span>
+          <span class="font-medium text-red-600"><a href="$(link-advert)" target="hotspot_advert">Advertisement Required</a></span>
+        </div>
+        $(elif refresh-timeout)
+        <div class="flex justify-between items-center py-2.5 px-4 bg-white border-b border-slate-100">
+          <span class="text-slate-500 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-indigo-500"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg> Refresh Otomatis
+          </span>
+          <span class="font-medium text-slate-800">$(refresh-timeout)</span>
+        </div>
+        $(endif)
+      </div>
+
+      <!-- Logout Form -->
+      <form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+        $(if login-by-mac != 'yes')
+        <button
+          type="submit"
+          class="w-full py-3 px-5 bg-rose-600 hover:bg-rose-700 active:scale-[0.99] text-white font-semibold rounded-xl shadow-xs transition duration-200 flex items-center justify-center gap-2 text-xs sm:text-sm uppercase tracking-wider"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          <span>Logout / Keluar</span>
+        </button>
+        $(endif)
+      </form>
+
+      <!-- Bottom Info -->
+      <div class="mt-5 pt-3 border-t border-slate-100 text-center text-[11px] text-slate-400">
+        <span>Jaringan Hotspot PPLG &bull; SMKN 1 Cirebon</span>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-[#213555] px-4 sm:px-6 text-white w-full">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <img src="img/logo.png" class="w-6 h-6 object-contain" alt="Logo" />
+        <p class="font-semibold">SMK Negeri 1 Cirebon - PPLG</p>
+      </div>
+      <p class="text-slate-300 text-[11px]">Copyright &copy; 2026, SMKN 1 Cirebon.</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    if (document.getElementById('title')) {
+      document.getElementById('title').innerHTML = (window.location.hostname || "PPLG") + " > Status Hotspot";
+    }
+  </script>
+</body>
+</html>
